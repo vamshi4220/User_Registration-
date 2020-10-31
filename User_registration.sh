@@ -89,3 +89,15 @@ then
 else
     echo "no"
 fi
+
+#UC9
+
+read -p "enter a email " PW5
+p9="^[a-zA-Z0-9._-+]+@(gmail|outlook|abc|yahoo)+.(com|co|in)";
+if [[ $T =~ $p9 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
+
