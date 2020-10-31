@@ -77,3 +77,15 @@ then
 else
     echo "no"
 fi
+
+#UC8
+
+read -p "enter a pasword " pw4
+p8='^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$'
+
+if [[ $pw4 =~ $p8 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
