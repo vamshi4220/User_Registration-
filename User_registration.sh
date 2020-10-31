@@ -47,9 +47,9 @@ fi
 
 #UC5
 
-read -p "enter a pasword " p
+read -p "enter a pasword " pw1
 p5='^[a-zA-Z]{1,8}$'
-if [[ $p =~ $p5 ]]
+if [[ $pw1 =~ $p5 ]]
 then
     echo "yes"
 else
@@ -58,12 +58,22 @@ fi
 
 #UC6
 
-read -p "enter a pasword " Q
+read -p "enter a pasword " pw2
 p6='^[A-Z]{1}[a-zA-Z]{8,}$';
-if [[ $Q =~ $p6 ]]
+if [[ $pw2 =~ $p6 ]]
 then
     echo "yes"
 else
     echo "no"
 fi
 
+#UC7
+
+read -p "enter a pasword " pw3
+p7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
+if [[ $pw3 =~ $p7 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
