@@ -21,3 +21,14 @@ then
 else
     echo "no"
 fi
+
+#UC3
+
+read -p "enter a emailid " emailid
+p3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
+if [[ $emailid =~ $p3 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
