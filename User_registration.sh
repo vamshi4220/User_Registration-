@@ -55,3 +55,15 @@ then
 else
     echo "no"
 fi
+
+#UC6
+
+read -p "enter a pasword " Q
+p6='^[A-Z]{1}[a-zA-Z]{8,}$';
+if [[ $Q =~ $p6 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
+
